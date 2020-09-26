@@ -3,7 +3,6 @@ itsdangerous==1.1.0
 numpy>=1.9.2
 spicy>=0.15.1
 scikit-learn>=0.18
-matplotlib>=1.4.3
 pandas>=0.19
 astroid==2.3.3
 certifi==2018.11.29
