@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang=''>
+<head>
+<style>
+.mySlides {display:none;
+height:85vh;margin-left:4%;
+margin-right:4%;
+width:auto;}
+</style>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet"
+   href= "{{ url_for('static',filename='styles/styles.css')}}">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div id='cssmenu'>
+<ul>
+<li><img  style="height:7vh; padding-right:4px;padding-left:4px;" src="/static/images/icon.jpg" style=""></li>
+<li><label style="height:7vh;padding-right:4px;font-size:28px;font-weight:bold;margin-top:5px;
+padding-top:4px;">The Butterfly</label></li>
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/go">Calculate risk</a></li>
+  <li><a href="/form">Analyse your test report</a></li>
+</ul>
+</div>
+<div  >
+  <img class="mySlides" style="width:92%" src="/static/images/gland.jpg" >
+  <img class="mySlides" style="width:92%" src="/static/images/causes.png">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+<html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet"
+   href= "{{ url_for('static',filename='styles/styles.css')}}">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div id='cssmenu'>
+<ul>
+<li><img  style="height:7vh; padding-right:4px;padding-left:4px;" src="/static/images/icon.jpg" style=""></li>
+<li><label style="height:7vh;padding-right:4px;font-size:28px;font-weight:bold;margin-top:5px;
+padding-top:4px;">The Butterfly</label></li>
+</ul>
+</div><br>
+<a href="/" style="color:#EE731D;font-size:20px;margin-left:5px;">Home</a><br>
+<body>
+<h3 style="color:#4DC3FF">Analysis Result: {{ prediction }}<h3>
+<p style="font-size:30px;font-weight:bold;color:#EE731D">Why don’t people have a thyroid?</p>
+<p>-A small percentage of people are born without a thyroid or with a malformed thyroid — known as congenital hypothyroidism</p>
+<p>
+-People who have thyroid cancer usually have all or part of their thyroid removed</p><p>
+-Some people with thyroid nodules or goiter (enlargement) that is either cosmetically unsightly, or is compromising breathing or swallowing, have their thyroid removed surgically
+</p><p>
+-Some people with Graves’ disease or hyperthyroidism have their thyroid removed surgically. It is typically a last-resort treatment in the U.S., where radioactive iodine (RAI) is more often performed, but outside the U.S., after antithyroid drugs, surgery is considered the primary treatment for Graves’ and hyperthyroidism
+</p><p>  
+  So, if you don’t have a thyroid, or you have a thyroid but it is not functioning as it should to produce enough thyroid hormone, then you are hypothyroid.</p>
+  
+</body>
+</html>

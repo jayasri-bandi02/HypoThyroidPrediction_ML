@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang=''>
+<head>
+<meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+   href= "{{ url_for('static',filename='styles/styles.css')}}">
+</head>
+<body>
+<div id='cssmenu'>
+<ul>
+<li><img  style="height:7vh; padding-right:4px;padding-left:4px;" src="/static/images/icon.jpg" style=""></li>
+<li><label style="height:7vh;padding-right:4px;font-size:28px;font-weight:bold;margin-top:5px;
+padding-top:4px;">The Butterfly</label></li>
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/go">Calculate risk</a></li>
+  <li class="active"><a href="#">Analyse your test report</a></li>
+</ul>
+</div>
+<p style="font-size:40px;font-weight:bold;">Thyroid Problems</p>
+<br><p style="font-size:18px;">
+Through the hormones it produces, the thyroid gland influences almost all of the metabolic processes in your body. Thyroid disorders can range from a small, harmless goiter (enlarged gland) that needs no treatment to life-threatening cancer. The most common thyroid problems involve abnormal production of thyroid hormones. Too much thyroid hormone results in a condition known as hyperthyroidism. Insufficient hormone production leads to hypothyroidism.Although the effects can be unpleasant or uncomfortable, most thyroid problems can be managed well if properly diagnosed and treated.</p>
+<center>
+<form method="post" action="predict">
+<table>
+<th style="font-size:19px;">Check out here!</th>
+<tr>
+<td style="font-size:20px;">TSH value measured:</td>
+<td><input type="number"  step=any name="tsh"></td>
+</tr><br>
+<tr>
+<td colspan="2"><center><input style="background-color:#EE731D;color:white;width:70px;height:25px;font-size:17px;" type="submit"  value="Predict"></center></td>
+</tr>
+</table>
+</form>
+</center>
+
+</body>
+</html>
