@@ -13,22 +13,22 @@ try:
     model = pickle.load(open('model.pkl', 'rb'))
     @app.route("/")
     def home():
-     return render_template("template/index.html")
+     return render_template("index.html")
     @app.route("/go")
     def go():
-     return render_template("template/go.html")
+     return render_template("go.html")
     @app.route("/form")
     def form():
-     return render_template("template/form.html")
+     return render_template("form.html")
     @app.route("/output")
     def output(prediction):
-     return render_template("template/output.html",prediction)
+     return render_template("output.html",prediction)
     @app.route("/risk")
     def risk():
-     return render_template("template/risk.html")
+     return render_template("risk.html")
     @app.route("/about")
     def about():
-     return render_template('template/about.html')
+     return render_template('about.html')
     @app.route('/predict',methods=['POST','GET'])
     def predict():
      features = []
@@ -39,9 +39,9 @@ try:
      prediction = model.predict(final_features)
      print(prediction)
      if prediction[0]==1:
-         return render_template('template/output.html', prediction='HypoThyroid!')
+         return render_template('output.html', prediction='HypoThyroid!')
      elif prediction[0]==0:
-         return render_template('template/output.html', prediction='Hypothyroid Negative!')
+         return render_template('output.html', prediction='Hypothyroid Negative!')
     if __name__ == "__main__":
      app.run(debug=True,use_reloader=False,port=5555)
 except :
