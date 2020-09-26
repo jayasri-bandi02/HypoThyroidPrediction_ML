@@ -43,7 +43,7 @@ try:
      elif prediction[0]==0:
          return render_template('output.html', prediction='Hypothyroid Negative!')
     if __name__ == "__main__":
-     app.run(debug=True,use_reloader=False,port=5555)
+     app.run(debug=True)
 except :
     traceback.print_exc()
 
